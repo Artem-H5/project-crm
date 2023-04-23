@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="/project-crm/style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><a href="/project-crm/">Головна</a></div>
+            <div id="export">Експортувати</div>
+            <div id="req">Імпортувати</div>
+            <div>Дістати дані по url</div>
+            <div id="exit">Вийти</div>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/project-crm/restoran/">Ресторан</a> </li>
+                <li><a href="/project-crm/video/">Відео хостинг</a></li>
+                <li><a href="/project-crm/store/">Магазин</a> </li>
+            </ul>
+        </nav>
+        <section>
+            <table>
+                <thead>
+                    <tr id="video-tr">
+                        <th>#</th>
+                        <th>Назва</th>
+                        <th id="sort-video-date" title="При настиску сортувати.">Дата публікації</th>
+                        <th id="sort-video-url" title="При настиску сортувати.">Посилання</th>
+                        <th>Редагувати</th>
+                        <th>Видалити</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <div class="container-modal hide">
+            <div class="modal"></div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/project-crm/code/index.js" type="module"></script>
+    <script src="/project-crm/code/dataShow.js" type="module"></script>
+</body>
+
+</html>

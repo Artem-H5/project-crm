@@ -7,7 +7,7 @@ const REQ = document.getElementById("req");
 const EXIT = document.getElementById('exit');
 
 if (!sessionStorage.isLogin && !document.location.pathname.includes("/authorization")) {
-    document.location = "authorization";
+    document.location = "/project-crm/authorization";
 }
 //authorization
 try {
@@ -52,7 +52,7 @@ try {
     REQ.addEventListener("click", () => {
         req("fetch", "https://jsonplaceholder.typicode.com/comments")
     })
-    EXIT.addEventListener('click', () => location = 'site')
+    EXIT.addEventListener('click', () => location = '/project-crm/site')
 } catch (e) {
 }
 

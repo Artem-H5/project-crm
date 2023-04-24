@@ -165,23 +165,7 @@ function saveData() {
 }
 
 export function exportDataEvent() {
-    /*
-     const pre = document.createElement("pre");
-     pre.classList.add("text-block")
-     const div = document.createElement("div");
-
-     const rest =  JSON.parse(localStorage.restorationBD);
-     const store = JSON.parse(localStorage.store);
-     const video = JSON.parse(localStorage.video);
-     //div.innerHTML = JSON.stringify([rest, store, video]);
-     //pre.append(div)
-     */
-
-    //showModalEvent()
-    //document.querySelector(".modal").innerHTML = ""
-    //document.querySelector(".modal").append(pre);
-
-    let windowData = open("/window", "test");
+    let windowData = open("/project-crm/window", "test");
     console.log(document.querySelector(".show-json"));
 
     setTimeout(() => {

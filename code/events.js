@@ -181,7 +181,7 @@ export const defaultItems = () => {
     const store = JSON.parse(localStorage.store);
     const rest = JSON.parse(localStorage.restorationBD);
     if (video.length === 0) {
-        video.push(new videoElementCrm('Jellyfish', '', '/video/jellyfish.mp4', 'swimming jellyfish', 'медузи, jellyfish', dateNow, generationId));
+        video.push(new videoElementCrm('Jellyfish', '', '/project-crm/video/video/jellyfish.mp4', 'swimming jellyfish', 'медузи, jellyfish', dateNow, generationId));
         video.push(new videoElementCrm('Sheeps', '', '/video/sheep.mp4', 'sheeps in the field', 'вівці, мала вівця', dateNow, generationId));
         video.push(new videoElementCrm('Beach', '', '/video/beach.mp4', 'view on the beachside', 'пляж, beach, beachside', dateNow, generationId));
         video.push(new videoElementCrm('Star Wars: The Bad Batch', '', 'https://gallium.stream.voidboost.cc/d9fddfbdf94ac1daa3ca75dc629568d3:2023031515:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dEtqVWFXMXhTVEtUdC8xR3ZJejlaOGc9PQ==/7/4/2/2/6/1/gtf7f.mp4', 'Star Wars: The Bad Batch s1', 'Fiction, Fantasy, Action', dateNow, generationId));
@@ -190,7 +190,7 @@ export const defaultItems = () => {
         localStorage.video = JSON.stringify(video);
     }
     if (store.length === 0) {
-        store.push(new StoreElementCRM('Ліхтарик-брелок', 300, '/img/store_coblight.jpg', 'Ліхтарик-брелок з магнітом', 2, 'магніт, ліхтарик, брелок', dateNow, generationId))
+        store.push(new StoreElementCRM('Ліхтарик-брелок', 300, '/project-crm/img/store_coblight.jpg', 'Ліхтарик-брелок з магнітом', 2, 'магніт, ліхтарик, брелок', dateNow, generationId))
         store.push(new StoreElementCRM('Ліхтар Sofirn', 1800, '/img/store_sofirn.jpg', 'EDC-ліхтар', 5, 'ліхтарик, 18650', dateNow, generationId))
         store.push(new StoreElementCRM('Повербанк Baseus Adaman 22.5w', 2000, '/img/store_powerbank.jpg', 'Повербанк 22.5w', 1, 'повербанк, Baseus', dateNow, generationId))
         store.push(new StoreElementCRM('Повербанк Baseus Adaman 22.5w', 2100, '/img/store_powerbank.jpg', 'Повербанк 22.5w', 1, 'повербанк, Baseus', dateNow, generationId))

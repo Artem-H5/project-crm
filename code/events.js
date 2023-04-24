@@ -48,7 +48,7 @@ function hideModalEvent() {
 function changeCategoryEvent(e) {
     const modal__body = document.querySelector(".modal__body");
     modal__body.innerHTML = "";
-    console.log(e.target.value);
+
     if (e.target.value === "Магазин") {
         modal__body.insertAdjacentHTML("beforeend", `
        <form>
@@ -118,7 +118,6 @@ function saveData() {
             localStorage.store = JSON.stringify(store);
 
         } else if (isCategory.value === 'Відео хостинг') {
-            console.log('video')
             const obj = {
                 productName: 'string',
                 poster: 'string',
@@ -128,7 +127,6 @@ function saveData() {
             }
 
             inputs.forEach(el => {
-                console.log(el.value)
                 obj[el.dataset.type] = el.value;
                 el.value = '';
             })
@@ -139,7 +137,6 @@ function saveData() {
             localStorage.video = JSON.stringify(video);
 
         } else if (isCategory.value === 'Рестаран') {
-            console.log('restrant')
             const obj = {
                 productName: 'string',
                 productWeigth: 'number',
@@ -166,7 +163,6 @@ function saveData() {
 
 export function exportDataEvent() {
     let windowData = open("/project-crm/window", "test");
-    console.log(document.querySelector(".show-json"));
 
     setTimeout(() => {
         windowData.close()
@@ -182,8 +178,8 @@ export const defaultItems = () => {
     const rest = JSON.parse(localStorage.restorationBD);
     if (video.length === 0) {
         video.push(new videoElementCrm('Jellyfish', '', '/project-crm/video/video/jellyfish.mp4', 'swimming jellyfish', 'медузи, jellyfish', dateNow, generationId));
-        video.push(new videoElementCrm('Sheeps', '', '/project-crm/video/sheep.mp4', 'sheeps in the field', 'вівці, мала вівця', dateNow, generationId));
-        video.push(new videoElementCrm('Beach', '', '/project-crm/video/beach.mp4', 'view on the beachside', 'пляж, beach, beachside', dateNow, generationId));
+        video.push(new videoElementCrm('Sheeps', '', '/project-crm/video/video/sheep.mp4', 'sheeps in the field', 'вівці, мала вівця', dateNow, generationId));
+        video.push(new videoElementCrm('Beach', '', '/project-crm/video/video/beach.mp4', 'view on the beachside', 'пляж, beach, beachside', dateNow, generationId));
         video.push(new videoElementCrm('Star Wars: The Bad Batch', '', 'https://gallium.stream.voidboost.cc/d9fddfbdf94ac1daa3ca75dc629568d3:2023031515:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dEtqVWFXMXhTVEtUdC8xR3ZJejlaOGc9PQ==/7/4/2/2/6/1/gtf7f.mp4', 'Star Wars: The Bad Batch s1', 'Fiction, Fantasy, Action', dateNow, generationId));
         video.push(new videoElementCrm('Teenage Mutant Ninja Turtles', '', 'https://phoenix.stream.voidboost.cc/ba231e05c326c261abec66e860be2209:2023031517:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dDdGU2piRG5GeGc4b3NLcCttbFVjK1E9PQ==/1/7/6/2/4/4/g1d63.mp4', 'Teenage Mutant Ninja Turtles s1', 'Fantasy, Action, Comedies', dateNow, generationId));
         video.push(new videoElementCrm('Star Wars: The Clone Wars', '', 'https://acheron.stream.voidboost.cc/bb2e846f7bc53cd49d2905c085263636:2023031517:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dHNpbjNwQ2FwUVZZRTJSQ25PUVpFcVE9PQ==/4/7/5/5/6/3/gh0sp.mp4', 'Star Wars: The Clone Wars s1', 'Fiction, Fantasy, Action', dateNow, generationId));

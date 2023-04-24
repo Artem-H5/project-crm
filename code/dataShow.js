@@ -6,7 +6,7 @@ import { modalClose, modalSave } from "./var.js";
 export function showData(arr = []) {
     const tbody = document.querySelector('tbody');
     tbody.innerHTML = ""
-    console.log(arr)
+
     if (location.pathname.includes('restoran')) {
         arr.forEach(function ({ productName, quantity, price, stopList, date, id }, i) {
             //Назва	Залишок	Ціна	Редагувати	Статус	Дата додавання	Видалити
@@ -74,7 +74,7 @@ if (location.pathname.includes('restoran') && localStorage.restorationBD) {
 
 // Змінюємо об'єкт з БД
 function editItemEvent(e) {
-    // console.log(e.target)
+
     if (e.target.tagName !== 'SPAN') return;
     showModalEvent();
 
@@ -117,7 +117,7 @@ function editItemEvent(e) {
         const store = JSON.parse(localStorage.store);
         var rez = store.find(({ id }) => e.target.dataset.key === id);
     }
-    console.log(rez)
+
     const data = Object.entries(rez);
 
     const inputsElements = data.map(([props, value]) => {
@@ -134,8 +134,6 @@ function newSaveMenuInfo(newObj, oldObj) {
         date: oldObj.date,
         status: false
     }
-    console.log(oldObj)
-
 
     if (location.pathname.includes('restoran')) {
         inputs.forEach(input => {

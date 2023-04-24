@@ -17,7 +17,6 @@ try {
     document.getElementById("disabled")
         .addEventListener("click", userLoginEvent)
 } catch (error) {
-    // console.error(error)
 }
 //main page
 try {

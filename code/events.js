@@ -180,9 +180,9 @@ export const defaultItems = () => {
         video.push(new videoElementCrm('Jellyfish', '', '/project-crm/video/video/jellyfish.mp4', 'swimming jellyfish', 'медузи, jellyfish', dateNow, generationId));
         video.push(new videoElementCrm('Sheeps', '', '/project-crm/video/video/sheep.mp4', 'sheeps in the field', 'вівці, мала вівця', dateNow, generationId));
         video.push(new videoElementCrm('Beach', '', '/project-crm/video/video/beach.mp4', 'view on the beachside', 'пляж, beach, beachside', dateNow, generationId));
-        video.push(new videoElementCrm('Star Wars: The Bad Batch', '', 'https://gallium.stream.voidboost.cc/d9fddfbdf94ac1daa3ca75dc629568d3:2023031515:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dEtqVWFXMXhTVEtUdC8xR3ZJejlaOGc9PQ==/7/4/2/2/6/1/gtf7f.mp4', 'Star Wars: The Bad Batch s1', 'Fiction, Fantasy, Action', dateNow, generationId));
-        video.push(new videoElementCrm('Teenage Mutant Ninja Turtles', '', 'https://phoenix.stream.voidboost.cc/ba231e05c326c261abec66e860be2209:2023031517:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dDdGU2piRG5GeGc4b3NLcCttbFVjK1E9PQ==/1/7/6/2/4/4/g1d63.mp4', 'Teenage Mutant Ninja Turtles s1', 'Fantasy, Action, Comedies', dateNow, generationId));
-        video.push(new videoElementCrm('Star Wars: The Clone Wars', '', 'https://acheron.stream.voidboost.cc/bb2e846f7bc53cd49d2905c085263636:2023031517:UmpWcVJESzNUSmRIUTRLdDdRK0s0ZWw2TnE4UDVWMlpZRHVxVXlhelBOcUlHcEFoeDdSSFdCbjI4WCtYWVE4dHNpbjNwQ2FwUVZZRTJSQ25PUVpFcVE9PQ==/4/7/5/5/6/3/gh0sp.mp4', 'Star Wars: The Clone Wars s1', 'Fiction, Fantasy, Action', dateNow, generationId));
+        video.push(new videoElementCrm('Lions', '', '/project-crm/video/video/lions.mp4', 'a pack of lions', 'Lion, Animal, Wildlife videoевів', dateNow, generationId));
+        video.push(new videoElementCrm('Highland cows', '', '/project-crm/video/video/highland-cows.mp4', 'a high mountain cow is chewing', 'Highland cows, Cows, Cattle video', dateNow, generationId));
+        video.push(new videoElementCrm('Road next to river', '', '/project-crm/video/video/road-next-to-river.mp4', 'Republika Srpska, Bosnia and Herzegovina', 'River, Road, Mountain video', dateNow, generationId));
         localStorage.video = JSON.stringify(video);
     }
     if (store.length === 0) {

@@ -180,7 +180,7 @@ export const defaultItems = () => {
         video.push(new videoElementCrm('Jellyfish', '', '/project-crm/video/video/jellyfish.mp4', 'swimming jellyfish', 'медузи, jellyfish', dateNow, generationId));
         video.push(new videoElementCrm('Sheeps', '', '/project-crm/video/video/sheep.mp4', 'sheeps in the field', 'вівці, мала вівця', dateNow, generationId));
         video.push(new videoElementCrm('Beach', '', '/project-crm/video/video/beach.mp4', 'view on the beachside', 'пляж, beach, beachside', dateNow, generationId));
-        video.push(new videoElementCrm('Lions', '', '/project-crm/video/video/lions.mp4', 'a pack of lions', 'Lion, Animal, Wildlife videoевів', dateNow, generationId));
+        video.push(new videoElementCrm('Lions', '', '/project-crm/video/video/lions.mp4', 'a pack of lions', 'Lion, Animal, Wildlife video', dateNow, generationId));
         video.push(new videoElementCrm('Highland cows', '', '/project-crm/video/video/highland-cows.mp4', 'a high mountain cow is chewing', 'Highland cows, Cows, Cattle video', dateNow, generationId));
         video.push(new videoElementCrm('Road next to river', '', '/project-crm/video/video/road-next-to-river.mp4', 'Republika Srpska, Bosnia and Herzegovina', 'River, Road, Mountain video', dateNow, generationId));
         localStorage.video = JSON.stringify(video);
